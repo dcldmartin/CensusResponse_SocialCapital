@@ -125,7 +125,5 @@ topo2geo counties=- \
 
 The result (still a work in progress):
 
-<object type="image/svg+xml" data="https://github.com/dcldmartin/CensusResponse_SocialCapital/blob/master/ny_pdb.svg" align="center">
-  Your browser does not support SVG :(
-</object>
+[[https://github.com/dcldmartin/CensusResponse_SocialCapital/blob/master/ny_pdb.svg]]
 
