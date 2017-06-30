@@ -3,7 +3,7 @@
 
 I'm exploring different tools for mapping. I like [QGIS](http://www.qgis.org/en/site/), but it's not particularly reproducible. I'm also interested in working in D3 to produce good visualizations for the web but don't want to get too deep into the weeds of building my own custom tools.
 
-Enter [a serious of Medium posts](https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c) from [Mike Bostock](https://medium.com/@mbostock), walking through a set of tools he built for working with D3 from the command line.
+Enter [a series of Medium posts](https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c) from [Mike Bostock](https://medium.com/@mbostock), walking through a set of tools he built for working with D3 from the command line.
 
 The basic idea: abstract most of the operations you'd want into a small set of tools that you can use from the command line. You end up with a bash script that you can recombine, automate and reproduce - especially with [make files](https://bost.ocks.org/mike/make/).
 
