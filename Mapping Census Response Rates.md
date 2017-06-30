@@ -122,5 +122,6 @@ topo2geo counties=- \
 | geo2svg -n --stroke none -p 1 -w 960 -h 960 \
 > ny_pdb.svg
 ```
-
-[[https://cdn.rawgit.com/dcldmartin/CensusResponse_SocialCapital/47e9a619/ny_pdb.svg]]
+<object type="image/svg+xml" data="https://cdn.rawgit.com/dcldmartin/CensusResponse_SocialCapital/47e9a619/ny_pdb.svg">
+  Your browser does not support SVG
+</object>
