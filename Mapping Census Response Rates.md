@@ -126,4 +126,3 @@ topo2geo counties=- \
 The result (still a work in progress):
 
 [[https://github.com/dcldmartin/CensusResponse_SocialCapital/blob/master/ny_pdb.svg]]
-
