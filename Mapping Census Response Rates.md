@@ -122,3 +122,5 @@ topo2geo counties=- \
 | geo2svg -n --stroke none -p 1 -w 960 -h 960 \
 > ny_pdb.svg
 ```
+
+[[https://cdn.rawgit.com/dcldmartin/CensusResponse_SocialCapital/blob/master/ny_pdb.svg]]
