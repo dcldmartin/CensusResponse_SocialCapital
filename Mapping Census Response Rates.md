@@ -123,4 +123,4 @@ topo2geo counties=- \
 > ny_pdb.svg
 ```
 
-[[https://cdn.rawgit.com/dcldmartin/CensusResponse_SocialCapital/blob/master/ny_pdb.svg]]
+[[https://cdn.rawgit.com/dcldmartin/CensusResponse_SocialCapital/47e9a619/ny_pdb.svg]]
