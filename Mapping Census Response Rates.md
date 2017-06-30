@@ -1,21 +1,22 @@
 
 # Mapping Census Response Rates
-/
-\[Cleaned-up version of prior [mapping project](http://localhost:8888/notebooks/Documents/Data%20Projects/Data%20stories/Mapping%20project%20-%20.ipynb)\]
 
-Before Getting started, I set the notebook-level working directory, download and unzip the data shapefile.
+I'm exploring different tools for mapping. I like [QGIS](http://www.qgis.org/en/site/), but it's not particularly reproducible. I'm also interested in working in D3 to produce good visualizations for the web but don't want to get too deep into the weeds of building my own custom tools.
+
+Enter [a serious of Medium posts](https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c) from [Mike Bostock](https://medium.com/@mbostock), walking through a set of tools he built for working with D3 from the command line.
+
+The basic idea: abstract most of the operations you'd want into a small set of tools that you can use from the command line. You end up with a bash script that you can recombine, automate and reproduce - especially with [make files](https://bost.ocks.org/mike/make/).
+
+The main innovation is to introduce 'new-line delimited JSON'. Rather than spitting out a super long blob, you can split it into discrete meaningful elements, making the code more human readable, coding and trobleshooting more interactively.
+
+The below is just my effort to walk through this working with my own dataset. I'm using TIGER shapefiles from the census (New York state census tracts, circa 2010) and visualizing tract-level response rates to the 2010 census. Why does this matter? That's another story.
+
+There's a bunch of dependencies here. Look at Bostock's [original post](https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c) for a list - the tools rely on Node under hood.
 
 
-```python
+```bash
 # Set the notebook-level working directory
 %cd FILEPATH
-```
-
-
-```python
-%%bash
-
-# Dependency: requires node.js and several packages covered in Bostock's overview. List?
 
 # Download and unzip NY State shapefile from TIGER
 curl 'ftp://ftp2.census.gov/geo/tiger/GENZ2010/gz_2010_36_140_00_500k.zip' -o 'ny_counties.zip'
@@ -23,13 +24,7 @@ curl 'ftp://ftp2.census.gov/geo/tiger/GENZ2010/gz_2010_36_140_00_500k.zip' -o 'n
 unzip -o ny_counties.zip
 ```
 
-Mike Bostock gives a pretty good overview of the tools in his series of posts on these tools (which I'm essentially mirroring with my own data below), but here's a brief overview:
 
-## The main idea: working on the command line is a good idea, creating tools to manipulate data from scratch is a bad one
-
-These are tools to work with D3 on the command line using Node. The key concept: he introduces 'new-line delimited JSON'. This enabled him to construct command line tools that parse JSON line by line at the command line, allowing you to interactively munge GIS data using bash scripts.
-
-Case in point: I'm using TIGER shapefiles from the census (New York state census tracts, circa 2010) and visualizing tract-level response rates to the 2010 census. Why does this matter? That's another story.
 
 * 1) ```shp2json``` converts the SHP file to JSON. In this case, the ```-n``` flag specifies newline delimited output with each feature as its own line, since I want to pipe it into the next command.
 
@@ -40,8 +35,7 @@ Case in point: I'm using TIGER shapefiles from the census (New York state census
 NOTE: At any point, you can visualize the SHP or JSON file (but not NDJSON) by dropping it into [Mapshaper](http://mapshaper.org/)
 
 
-```python
-%%bash
+```bash
 
 shp2json gz_2010_36_140_00_500k.shp \
 | geoproject 'd3.geoTransverseMercator()
@@ -61,8 +55,7 @@ In the end we have a new-line delimited file with the features we want (identifi
 Note: I've included CENSUS_API_KEY as an environment variable. You'll obviously need your own.
 
 
-```python
-%%bash
+```bash
 
 mkdir pdb
 curl 'http://api.census.gov/data/2015/pdb/tract?get=County,County_name,Tract,Tot_Population_CEN_2010,Mail_Return_Rate_CEN_2010&for=tract:*&in=state:36+county:[1-123]&key='${CENSUS_API_KEY} -o pdb/pdb_#1.json
@@ -76,7 +69,6 @@ ndjson-split 'd.slice(1)' < pdb_split.json \
 | ndjson-map '{id: d[0] + d[2], county: d[1], Tot_Population_CEN_2010: + d[3], Mail_Return_Rate_CEN_2010: + d[4], univ_id: +d[5]+d[6]+d[7]}'
 > ny_pdb_data.ndjson
 
-
 ```
 
 Now to join these together
@@ -89,8 +81,7 @@ Now to join these together
 * 11) Second, I can create a mesh of lines instead of merging the polygons. Below I've specified the ```-f``` flag to filter some lines out based on the expression, and I'm pulling the lines from the 'counties' polygons I just created. The expression indicates that I'm only showing internal borders - not those on the coasts. In terms of the expression, arcs that aren't adjacent to others.
 
 
-```python
-%%bash
+```bash
 
 ndjson-join 'd.id' \
   ny-projected-id.ndjson \
@@ -120,7 +111,7 @@ geo2topo -n \
 * 16) Finally, the ```geo2svg``` tool converts the geojson into an SVG.
 
 
-```python
+```bash
 (topo2geo tracts=- \
     < ny_pdb_topo.json \
     | ndjson-map -r d3 -r d3=d3-scale-chromatic 'z = d3.scaleThreshold().domain([0, 1, 60, 70, 75, 80, 85, 90]).range(d3.schemeOrRd[9]), d.features.forEach(f => f.properties.fill = z(f.properties.Mail_Return_Rate_CEN)), d' \
