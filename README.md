@@ -23,7 +23,7 @@ But in measuring this they're also picking up on something else. If you think ab
 <br><br>
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/25906562/27774872-4190ee50-5f60-11e7-9040-fb284e6c91e6.png" align="center">
+<img src="https://user-images.githubusercontent.com/25906562/27774872-4190ee50-5f60-11e7-9040-fb284e6c91e6.png" width=700>
     <div align='keft'><i>Census Response Rates in Chicago</i>
     </div>
 </div>
