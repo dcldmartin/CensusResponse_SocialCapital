@@ -1,6 +1,6 @@
-# Measuring the Community Spirit of Americans, One Door Knock at a Time
+# Measuring the Cohesion of American Communities, One Door Knock at a Time
 
-<i>This is a summary of a research paper for which a [gated link](http://apr.sagepub.com/content/43/4/625.short) as well as a [pre-publication copy](https://github.com/dcldmartin/CensusResponse_SocialCapital/blob/mastere/Martin&Newman_CensusResponse.pdf) are available.</i>
+<i>This is a summary of a research paper for which a [gated link](http://apr.sagepub.com/content/43/4/625.short) as well as a [pre-publication copy](https://github.com/dcldmartin/CensusResponse_SocialCapital/blob/master/Martin&Newman_CensusResponse.pdf) are available.</i>
 
 ---
 
