@@ -1,6 +1,6 @@
 # Measuring the Cohesion of American Communities, One Door Knock at a Time
 
-<i>This is a summary of a research paper for which a [gated link](http://apr.sagepub.com/content/43/4/625.short) as well as a [pre-publication copy](https://github.com/dcldmartin/CensusResponse_SocialCapital/blob/master/Martin&Newman_CensusResponse.pdf) are available.</i>
+<i>This is a summary of a research paper for which a [gated link](http://apr.sagepub.com/content/43/4/625.short) as well as a [pre-publication copy](https://github.com/dcldmartin/CensusResponse_SocialCapital/blob/test/Martin%26Newman_CensusResponse.pdf) are available.</i>
 
 ---
 
@@ -27,4 +27,4 @@ This specific behavior -- turning in a census form early -- actually tells us a 
 </div>
 
 <br><br>
-Our analysis seems to bear this out this basic idea. We compared census response rates to a variety of surveys, including deep-dive polls that pulled from large samples of individual communities around the country, as well as a large-scale survey of neighborhoods throughout Chicago. We consistently found that census response rates were high in communities where people reported being more likely to interact with their neighbors, cooperate with their neighbors to solve common problems and believe that they could have a positive imapct in bettering their community. Even controlling for things we thought could be driving this result, things like income, family structure, racial and ethnic makup or age distribution, we found that communities with higher census response rates were more socially and civically engaged. In short, in carrying out its day-to-day work, the Census may unwittingly be mapping the community spirit of every neighborhood in America.
+Our analysis seems to bear out this basic idea. We compared census response rates to a variety of surveys, including deep-dive polls that pulled from large samples of individual communities around the country, as well as a large-scale survey of neighborhoods throughout Chicago. We consistently found that census response rates were high in communities where people reported being more likely to interact with their neighbors, cooperate with their neighbors to solve common problems and believe that they could have a positive imapct in bettering their community. Even controlling for things we thought could be driving this result, things like income, family structure, racial and ethnic makup or age distribution, we found that communities with higher census response rates were more socially and civically engaged. In short, in carrying out its day-to-day work, the Census may unwittingly be mapping the cohesion of every neighborhood in America.
