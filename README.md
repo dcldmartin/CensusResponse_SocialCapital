@@ -22,7 +22,7 @@ Because the US Census Bureau has such a massive job to do every ten years, they 
 But in measuring this they're also picking up on something else. If you think about it, responding to the census, or any survey, is really a small donation of your time - or a tax if you're feeling less charitable. But there's a lot of research showing that people who are more likely to volunteer for surveys are also more likely to volunteer for a lot of other stuff. They're people who are more prone to giving up their own effort for others. If you ignore your census form in the mail, they'll send someone to knock on your door eventually - but we suspected that people who respond quickly to the census are more likely to do all kinds of other good community-oriented things, and place where there are a lot of them should measure higher in social capital. In short, we thought the Census is unwittingly mapping the community spirit of every block in America.
 
 <div class="image">
-<img src="http://localhost:8888/?token=4d660b0173968cd681afb7ef171539c8030660e7243e91e2" align="center" width="700">
+<img src="https://user-images.githubusercontent.com/25906562/27774350-727e95ee-5f56-11e7-9fbf-56c6ac5269dd.png" align="center" width="700">
     <div align='center'><strong>Census Response Rates in Cook County, Illinois</strong>
     </div>
 </div>
