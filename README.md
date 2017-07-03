@@ -20,10 +20,11 @@ So where's the data?
 Because the US Census Bureau has such a massive job to do every ten years, they do a lot of planning. And one of the things they plan for is how hard it's going to be to track people down in your neighborhoos. The harder it is, the more people they need to hire to knock on your door. The Census Bureau needs to know this to staff their own data collection.
 
 But in measuring this they're also picking up on something else. If you think about it, responding to the census, or any survey, is really a small donation of your time - or a tax if you're feeling less charitable. But there's a lot of research showing that people who are more likely to volunteer for surveys are also more likely to volunteer for a lot of other stuff. They're people who are more prone to giving up their own effort for others. If you ignore your census form in the mail, they'll send someone to knock on your door eventually - but we suspected that people who respond quickly to the census are more likely to do all kinds of other good community-oriented things, and place where there are a lot of them should measure higher in social capital. In short, we thought the Census is unwittingly mapping the community spirit of every block in America.
+<br><br>
 
-<div class="image">
+<div align="center">
 <img src="https://user-images.githubusercontent.com/25906562/27774872-4190ee50-5f60-11e7-9040-fb284e6c91e6.png" align="center">
-    <div align='center'><strong>Census Response Rates in Chicago</strong>
+    <div align='keft'><i>Census Response Rates in Chicago</i>
     </div>
 </div>
 
