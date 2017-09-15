@@ -4,7 +4,7 @@
 
 ---
 
-How would you rate your neighborhood? There's any number of services that provide metrics about a given community: home values, crime rates, walkability, information about local schools and other services -  but some of the most important things about a community are hard to put a number on. Social scientists have long argued for the importance of 'social capital' -- the degree to which members of a community trust each other and are able to work together -- as a way to measure the health of a community. But it has always been difficult or cost-prohibitive to measure this at the community level. My colleague Ben Newman and I have shown that little-used census administrative data can do exactly that.
+How would you rate your neighborhood? There's any number of services that provide metrics about a given community: home values, crime rates, walkability, information about local schools and other services --  but some of the most important things about a community are hard to put a number on. Social scientists have long argued for the importance of 'social capital' -- the degree to which members of a community trust each other and are able to work together -- as a way to measure the health of a community. But it has always been difficult or cost-prohibitive to measure this at the community level. My colleague Ben Newman and I have shown that little-used census administrative data can do exactly that.
 
 **What's Taiwan times two?**
 
